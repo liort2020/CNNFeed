@@ -32,6 +32,24 @@ MVVM architecture pattern and Clean architecture with three layers:
 ## Dependencies - Pods
 - We use [`XMLCoder`](https://github.com/MaxDesiatov/XMLCoder) that parse XML response from CNN’s RSS channel using `Codable`
 
-## System requirement
-- iOS 14.0+
-- Xcode 12.0+
+
+## Installation
+### System requirement
+- iOS 14.0 or later
+- Xcode 12.0 or later
+
+### Install and Run the CNN Feed application
+1. Install [`CocoaPods`](https://cocoapods.org) - This is a dependency manager for Swift and Objective-C projects for Apple's platforms. 
+You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+2. Navigate to the project directory and install pods from `Podfile` with the following command:
+
+```bash
+$ pod install
+```
+
+3. Open the `CNNFeed.xcworkspace` file that was created and run it in Xcoode
