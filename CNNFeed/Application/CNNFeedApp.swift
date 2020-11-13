@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct CNNFeedApp: App {
-    let persistenceController = PersistenceController.shared
-
+    private let persistenceController = PersistenceController.shared
+    private let diContainer = DIContainer()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(FeedViewModel(diContainer: diContainer))
         }
     }
 }

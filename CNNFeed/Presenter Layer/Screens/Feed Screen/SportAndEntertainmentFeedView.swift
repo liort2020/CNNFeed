@@ -1,5 +1,5 @@
 //
-//  WorldSportAndEntertainmentFeedView.swift
+//  SportAndEntertainmentFeedView.swift
 //  CNNFeed
 //
 //  Created by Lior Tal on 12/11/2020.
@@ -14,7 +14,7 @@ struct SportAndEntertainmentFeedView: View {
     
     // We used ascending=false to show World Sport items before Entertainment items
     @FetchRequest(sortDescriptors: [NSSortDescriptor(keyPath: \FeedItem.channel, ascending: false)],
-                  predicate: NSPredicate(format: "channel = %@ OR channel = %@", FeedChannel.worldSport.rawValue, FeedChannel.entertainment.rawValue),
+                  predicate: NSPredicate(format: "channel = %@ OR channel = %@", FeedChannel.sport.rawValue, FeedChannel.entertainment.rawValue),
                   animation: .default) private var feedItems: FetchedResults<FeedItem>
     
     var body: some View {
@@ -31,7 +31,7 @@ struct SportAndEntertainmentFeedView: View {
     }
 }
 
-struct WorldSportAndEntertainmentFeedView_Previews: PreviewProvider {
+struct SportAndEntertainmentFeedView_Previews: PreviewProvider {
     static var previews: some View {
         SportAndEntertainmentFeedView(latestURL: Binding.constant(nil), latestTitle: Binding.constant(""))
     }

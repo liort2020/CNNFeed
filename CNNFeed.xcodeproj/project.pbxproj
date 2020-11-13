@@ -3,18 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5C3488156AA0F15A42B884 /* Pods_CNNFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC25F52869A69A0033725E3 /* Pods_CNNFeed.framework */; };
+		2E039CA2F1571CE38227ACC6 /* Pods_CNNFeed_CNNFeedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2541FA8F5433DD390255503F /* Pods_CNNFeed_CNNFeedUITests.framework */; };
+		4341DAA14627E1E6FF64CEA9 /* Pods_CNNFeedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8B34495DE40CB5CAADA4F9 /* Pods_CNNFeedTests.framework */; };
+		49A54D62255EC011000F450F /* CNNChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A54D61255EC011000F450F /* CNNChannelModel.swift */; };
+		49A54D6D255EC0F7000F450F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A54D6C255EC0F7000F450F /* Endpoint.swift */; };
 		49BD8961255D665600DDF0A0 /* CNNFeedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8960255D665600DDF0A0 /* CNNFeedApp.swift */; };
-		49BD8963255D665600DDF0A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8962255D665600DDF0A0 /* ContentView.swift */; };
 		49BD8965255D665700DDF0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BD8964255D665700DDF0A0 /* Assets.xcassets */; };
 		49BD8968255D665700DDF0A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BD8967255D665700DDF0A0 /* Preview Assets.xcassets */; };
 		49BD896A255D665700DDF0A0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8969255D665700DDF0A0 /* Persistence.swift */; };
 		49BD896D255D665700DDF0A0 /* CNNFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49BD896B255D665700DDF0A0 /* CNNFeed.xcdatamodeld */; };
 		49BD8978255D665700DDF0A0 /* CNNFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8977255D665700DDF0A0 /* CNNFeedTests.swift */; };
 		49BD8983255D665700DDF0A0 /* CNNFeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8982255D665700DDF0A0 /* CNNFeedUITests.swift */; };
+		49BD8996255D66B800DDF0A0 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8995255D66B800DDF0A0 /* DIContainer.swift */; };
+		49BD89A3255D678600DDF0A0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89A2255D678600DDF0A0 /* WelcomeView.swift */; };
+		49BD89AE255D680B00DDF0A0 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89AD255D680B00DDF0A0 /* FeedViewModel.swift */; };
+		49BD89C3255D68F000DDF0A0 /* DefaultDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89C2255D68F000DDF0A0 /* DefaultDataRepository.swift */; };
+		49BD89C8255D690700DDF0A0 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89C7255D690700DDF0A0 /* DataRepository.swift */; };
+		49BD89D0255D6A2A00DDF0A0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89CF255D6A2A00DDF0A0 /* DataManager.swift */; };
+		49BD89D5255D6C3800DDF0A0 /* FeedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89D4255D6C3800DDF0A0 /* FeedUseCase.swift */; };
+		49BD89F0255D7DBD00DDF0A0 /* FeedItem+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89EF255D7DBD00DDF0A0 /* FeedItem+CoreData.swift */; };
+		49BD89F9255D87B900DDF0A0 /* FeedItemsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89F8255D87B900DDF0A0 /* FeedItemsParser.swift */; };
+		49BD89FF255DB20D00DDF0A0 /* FeedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD89FE255DB20D00DDF0A0 /* FeedTabView.swift */; };
+		49BD8A08255DB30B00DDF0A0 /* TravelFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A07255DB30B00DDF0A0 /* TravelFeedView.swift */; };
+		49BD8A16255DBBA800DDF0A0 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A15255DBBA800DDF0A0 /* Date+Formatter.swift */; };
+		49BD8A1B255DBE2500DDF0A0 /* SportAndEntertainmentFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A1A255DBE2500DDF0A0 /* SportAndEntertainmentFeedView.swift */; };
+		49BD8A28255DC18A00DDF0A0 /* ItemFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A27255DC18A00DDF0A0 /* ItemFeedView.swift */; };
+		49BD8A2D255DC4EF00DDF0A0 /* EmptyFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A2C255DC4EF00DDF0A0 /* EmptyFeedView.swift */; };
+		49BD8A36255DCB0D00DDF0A0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A35255DCB0D00DDF0A0 /* WebView.swift */; };
+		49BD8A79255E9BFC00DDF0A0 /* Color+FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD8A78255E9BFC00DDF0A0 /* Color+FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0013F719844B657A5EB7FCB7 /* Pods-CNNFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeed.release.xcconfig"; path = "Target Support Files/Pods-CNNFeed/Pods-CNNFeed.release.xcconfig"; sourceTree = "<group>"; };
+		0C33AEC20C24FB03F746703B /* Pods-CNNFeed-CNNFeedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeed-CNNFeedUITests.debug.xcconfig"; path = "Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2541FA8F5433DD390255503F /* Pods_CNNFeed_CNNFeedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNNFeed_CNNFeedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3365E07B6E32F942B6881AA3 /* Pods-CNNFeed-CNNFeedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeed-CNNFeedUITests.release.xcconfig"; path = "Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49A54D61255EC011000F450F /* CNNChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNNChannelModel.swift; sourceTree = "<group>"; };
+		49A54D6C255EC0F7000F450F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		49BD895D255D665600DDF0A0 /* CNNFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CNNFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BD8960255D665600DDF0A0 /* CNNFeedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNNFeedApp.swift; sourceTree = "<group>"; };
-		49BD8962255D665600DDF0A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49BD8964255D665700DDF0A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BD8967255D665700DDF0A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49BD8969255D665700DDF0A0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +75,28 @@
 		49BD897E255D665700DDF0A0 /* CNNFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CNNFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BD8982255D665700DDF0A0 /* CNNFeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNNFeedUITests.swift; sourceTree = "<group>"; };
 		49BD8984255D665700DDF0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BD8995255D66B800DDF0A0 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		49BD89A2255D678600DDF0A0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		49BD89AD255D680B00DDF0A0 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		49BD89C2255D68F000DDF0A0 /* DefaultDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataRepository.swift; sourceTree = "<group>"; };
+		49BD89C7255D690700DDF0A0 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		49BD89CF255D6A2A00DDF0A0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		49BD89D4255D6C3800DDF0A0 /* FeedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUseCase.swift; sourceTree = "<group>"; };
+		49BD89EF255D7DBD00DDF0A0 /* FeedItem+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedItem+CoreData.swift"; sourceTree = "<group>"; };
+		49BD89F8255D87B900DDF0A0 /* FeedItemsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsParser.swift; sourceTree = "<group>"; };
+		49BD89FE255DB20D00DDF0A0 /* FeedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTabView.swift; sourceTree = "<group>"; };
+		49BD8A07255DB30B00DDF0A0 /* TravelFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelFeedView.swift; sourceTree = "<group>"; };
+		49BD8A15255DBBA800DDF0A0 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		49BD8A1A255DBE2500DDF0A0 /* SportAndEntertainmentFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportAndEntertainmentFeedView.swift; sourceTree = "<group>"; };
+		49BD8A27255DC18A00DDF0A0 /* ItemFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFeedView.swift; sourceTree = "<group>"; };
+		49BD8A2C255DC4EF00DDF0A0 /* EmptyFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyFeedView.swift; sourceTree = "<group>"; };
+		49BD8A35255DCB0D00DDF0A0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		49BD8A78255E9BFC00DDF0A0 /* Color+FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+FeedItem.swift"; sourceTree = "<group>"; };
+		928EF4322F5EAF9D1337C596 /* Pods-CNNFeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeedTests.debug.xcconfig"; path = "Target Support Files/Pods-CNNFeedTests/Pods-CNNFeedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C4BDFF8061B60A6997C3B24 /* Pods-CNNFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeed.debug.xcconfig"; path = "Target Support Files/Pods-CNNFeed/Pods-CNNFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8B34495DE40CB5CAADA4F9 /* Pods_CNNFeedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNNFeedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6889ADE5557BE9E7B9EB031 /* Pods-CNNFeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeedTests.release.xcconfig"; path = "Target Support Files/Pods-CNNFeedTests/Pods-CNNFeedTests.release.xcconfig"; sourceTree = "<group>"; };
+		EAC25F52869A69A0033725E3 /* Pods_CNNFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNNFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5C3488156AA0F15A42B884 /* Pods_CNNFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4341DAA14627E1E6FF64CEA9 /* Pods_CNNFeedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +120,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E039CA2F1571CE38227ACC6 /* Pods_CNNFeed_CNNFeedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A54D6A255EC0D3000F450F /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89CF255D6A2A00DDF0A0 /* DataManager.swift */,
+				49BD89C7255D690700DDF0A0 /* DataRepository.swift */,
+				49BD89C2255D68F000DDF0A0 /* DefaultDataRepository.swift */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		49A54D6B255EC0E7000F450F /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				49A54D6C255EC0F7000F450F /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
 		49BD8954255D665600DDF0A0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +152,8 @@
 				49BD8976255D665700DDF0A0 /* CNNFeedTests */,
 				49BD8981255D665700DDF0A0 /* CNNFeedUITests */,
 				49BD895E255D665600DDF0A0 /* Products */,
+				6A849464AB31CB7CCDDFAC51 /* Pods */,
+				A64C303735F1BCA86DFFDED9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +170,12 @@
 		49BD895F255D665600DDF0A0 /* CNNFeed */ = {
 			isa = PBXGroup;
 			children = (
-				49BD8960255D665600DDF0A0 /* CNNFeedApp.swift */,
-				49BD8962255D665600DDF0A0 /* ContentView.swift */,
-				49BD8964255D665700DDF0A0 /* Assets.xcassets */,
-				49BD8969255D665700DDF0A0 /* Persistence.swift */,
-				49BD896E255D665700DDF0A0 /* Info.plist */,
-				49BD896B255D665700DDF0A0 /* CNNFeed.xcdatamodeld */,
-				49BD8966255D665700DDF0A0 /* Preview Content */,
+				49BD8993255D669600DDF0A0 /* Application */,
+				49BD899D255D674200DDF0A0 /* Presenter Layer */,
+				49BD899E255D675400DDF0A0 /* Domain Layer */,
+				49BD899F255D675F00DDF0A0 /* Data Layer */,
+				49BD8A0C255DB95B00DDF0A0 /* Helpers */,
+				49BD89B5255D684D00DDF0A0 /* Resources */,
 			);
 			path = CNNFeed;
 			sourceTree = "<group>";
@@ -136,6 +206,166 @@
 			path = CNNFeedUITests;
 			sourceTree = "<group>";
 		};
+		49BD8993255D669600DDF0A0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				49BD8960255D665600DDF0A0 /* CNNFeedApp.swift */,
+				49BD8994255D66A800DDF0A0 /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		49BD8994255D66A800DDF0A0 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				49BD8995255D66B800DDF0A0 /* DIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		49BD899D255D674200DDF0A0 /* Presenter Layer */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89A0255D676B00DDF0A0 /* Screens */,
+				49BD89AA255D67DE00DDF0A0 /* ViewModels */,
+			);
+			path = "Presenter Layer";
+			sourceTree = "<group>";
+		};
+		49BD899E255D675400DDF0A0 /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89D4255D6C3800DDF0A0 /* FeedUseCase.swift */,
+				49A54D61255EC011000F450F /* CNNChannelModel.swift */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		49BD899F255D675F00DDF0A0 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				49A54D6B255EC0E7000F450F /* Endpoint */,
+				49A54D6A255EC0D3000F450F /* Data Manager */,
+				49BD89F7255D878F00DDF0A0 /* Parser */,
+				49BD89E3255D7D6600DDF0A0 /* CoreData Storage */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		49BD89A0255D676B00DDF0A0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89A1255D677300DDF0A0 /* Welcome Screen */,
+				49BD89FD255DB1E900DDF0A0 /* Feed Screen */,
+				49BD8A31255DC57500DDF0A0 /* Web View */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		49BD89A1255D677300DDF0A0 /* Welcome Screen */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89A2255D678600DDF0A0 /* WelcomeView.swift */,
+			);
+			path = "Welcome Screen";
+			sourceTree = "<group>";
+		};
+		49BD89AA255D67DE00DDF0A0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89AD255D680B00DDF0A0 /* FeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		49BD89B5255D684D00DDF0A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49BD8964255D665700DDF0A0 /* Assets.xcassets */,
+				49BD896E255D665700DDF0A0 /* Info.plist */,
+				49BD8966255D665700DDF0A0 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49BD89E3255D7D6600DDF0A0 /* CoreData Storage */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89E4255D7D7900DDF0A0 /* Models */,
+				49BD8969255D665700DDF0A0 /* Persistence.swift */,
+				49BD896B255D665700DDF0A0 /* CNNFeed.xcdatamodeld */,
+			);
+			path = "CoreData Storage";
+			sourceTree = "<group>";
+		};
+		49BD89E4255D7D7900DDF0A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89EF255D7DBD00DDF0A0 /* FeedItem+CoreData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49BD89F7255D878F00DDF0A0 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89F8255D87B900DDF0A0 /* FeedItemsParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		49BD89FD255DB1E900DDF0A0 /* Feed Screen */ = {
+			isa = PBXGroup;
+			children = (
+				49BD89FE255DB20D00DDF0A0 /* FeedTabView.swift */,
+				49BD8A07255DB30B00DDF0A0 /* TravelFeedView.swift */,
+				49BD8A1A255DBE2500DDF0A0 /* SportAndEntertainmentFeedView.swift */,
+				49BD8A27255DC18A00DDF0A0 /* ItemFeedView.swift */,
+				49BD8A2C255DC4EF00DDF0A0 /* EmptyFeedView.swift */,
+			);
+			path = "Feed Screen";
+			sourceTree = "<group>";
+		};
+		49BD8A0C255DB95B00DDF0A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				49BD8A15255DBBA800DDF0A0 /* Date+Formatter.swift */,
+				49BD8A78255E9BFC00DDF0A0 /* Color+FeedItem.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		49BD8A31255DC57500DDF0A0 /* Web View */ = {
+			isa = PBXGroup;
+			children = (
+				49BD8A35255DCB0D00DDF0A0 /* WebView.swift */,
+			);
+			path = "Web View";
+			sourceTree = "<group>";
+		};
+		6A849464AB31CB7CCDDFAC51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C4BDFF8061B60A6997C3B24 /* Pods-CNNFeed.debug.xcconfig */,
+				0013F719844B657A5EB7FCB7 /* Pods-CNNFeed.release.xcconfig */,
+				0C33AEC20C24FB03F746703B /* Pods-CNNFeed-CNNFeedUITests.debug.xcconfig */,
+				3365E07B6E32F942B6881AA3 /* Pods-CNNFeed-CNNFeedUITests.release.xcconfig */,
+				928EF4322F5EAF9D1337C596 /* Pods-CNNFeedTests.debug.xcconfig */,
+				E6889ADE5557BE9E7B9EB031 /* Pods-CNNFeedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A64C303735F1BCA86DFFDED9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAC25F52869A69A0033725E3 /* Pods_CNNFeed.framework */,
+				2541FA8F5433DD390255503F /* Pods_CNNFeed_CNNFeedUITests.framework */,
+				DB8B34495DE40CB5CAADA4F9 /* Pods_CNNFeedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +373,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49BD8987255D665700DDF0A0 /* Build configuration list for PBXNativeTarget "CNNFeed" */;
 			buildPhases = (
+				0AAD1D675346D00AEE75564A /* [CP] Check Pods Manifest.lock */,
 				49BD8959255D665600DDF0A0 /* Sources */,
 				49BD895A255D665600DDF0A0 /* Frameworks */,
 				49BD895B255D665600DDF0A0 /* Resources */,
+				D3EAB2D7648E56C0E11CE3D5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +392,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49BD898A255D665700DDF0A0 /* Build configuration list for PBXNativeTarget "CNNFeedTests" */;
 			buildPhases = (
+				33B1973DD8C35248C6B17C67 /* [CP] Check Pods Manifest.lock */,
 				49BD896F255D665700DDF0A0 /* Sources */,
 				49BD8970255D665700DDF0A0 /* Frameworks */,
 				49BD8971255D665700DDF0A0 /* Resources */,
@@ -178,9 +411,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49BD898D255D665700DDF0A0 /* Build configuration list for PBXNativeTarget "CNNFeedUITests" */;
 			buildPhases = (
+				1022AD645B305E42C731C8E0 /* [CP] Check Pods Manifest.lock */,
 				49BD897A255D665700DDF0A0 /* Sources */,
 				49BD897B255D665700DDF0A0 /* Frameworks */,
 				49BD897C255D665700DDF0A0 /* Resources */,
+				A493FEC3DF53D673C45F134E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,15 +495,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AAD1D675346D00AEE75564A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNNFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1022AD645B305E42C731C8E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNNFeed-CNNFeedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33B1973DD8C35248C6B17C67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CNNFeedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A493FEC3DF53D673C45F134E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EAB2D7648E56C0E11CE3D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNNFeed/Pods-CNNFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CNNFeed/Pods-CNNFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CNNFeed/Pods-CNNFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49BD8959255D665600DDF0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				49BD896A255D665700DDF0A0 /* Persistence.swift in Sources */,
-				49BD8963255D665600DDF0A0 /* ContentView.swift in Sources */,
+				49BD8A1B255DBE2500DDF0A0 /* SportAndEntertainmentFeedView.swift in Sources */,
+				49BD89D0255D6A2A00DDF0A0 /* DataManager.swift in Sources */,
+				49BD89A3255D678600DDF0A0 /* WelcomeView.swift in Sources */,
+				49BD8A79255E9BFC00DDF0A0 /* Color+FeedItem.swift in Sources */,
+				49BD89F9255D87B900DDF0A0 /* FeedItemsParser.swift in Sources */,
+				49BD8A08255DB30B00DDF0A0 /* TravelFeedView.swift in Sources */,
+				49BD89AE255D680B00DDF0A0 /* FeedViewModel.swift in Sources */,
+				49BD89FF255DB20D00DDF0A0 /* FeedTabView.swift in Sources */,
+				49BD8A2D255DC4EF00DDF0A0 /* EmptyFeedView.swift in Sources */,
+				49A54D62255EC011000F450F /* CNNChannelModel.swift in Sources */,
+				49BD8996255D66B800DDF0A0 /* DIContainer.swift in Sources */,
+				49A54D6D255EC0F7000F450F /* Endpoint.swift in Sources */,
+				49BD89C3255D68F000DDF0A0 /* DefaultDataRepository.swift in Sources */,
+				49BD89F0255D7DBD00DDF0A0 /* FeedItem+CoreData.swift in Sources */,
+				49BD89D5255D6C3800DDF0A0 /* FeedUseCase.swift in Sources */,
+				49BD8A16255DBBA800DDF0A0 /* Date+Formatter.swift in Sources */,
+				49BD89C8255D690700DDF0A0 /* DataRepository.swift in Sources */,
 				49BD8961255D665600DDF0A0 /* CNNFeedApp.swift in Sources */,
 				49BD896D255D665700DDF0A0 /* CNNFeed.xcdatamodeld in Sources */,
+				49BD8A28255DC18A00DDF0A0 /* ItemFeedView.swift in Sources */,
+				49BD8A36255DCB0D00DDF0A0 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,14 +778,15 @@
 		};
 		49BD8988255D665700DDF0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4BDFF8061B60A6997C3B24 /* Pods-CNNFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CNNFeed/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CNNFeed/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 436RW8NBRZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CNNFeed/Info.plist;
+				INFOPLIST_FILE = CNNFeed/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,14 +801,15 @@
 		};
 		49BD8989255D665700DDF0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0013F719844B657A5EB7FCB7 /* Pods-CNNFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CNNFeed/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CNNFeed/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 436RW8NBRZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CNNFeed/Info.plist;
+				INFOPLIST_FILE = CNNFeed/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,6 +824,7 @@
 		};
 		49BD898B255D665700DDF0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 928EF4322F5EAF9D1337C596 /* Pods-CNNFeedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +847,7 @@
 		};
 		49BD898C255D665700DDF0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6889ADE5557BE9E7B9EB031 /* Pods-CNNFeedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +870,7 @@
 		};
 		49BD898E255D665700DDF0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C33AEC20C24FB03F746703B /* Pods-CNNFeed-CNNFeedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +891,7 @@
 		};
 		49BD898F255D665700DDF0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3365E07B6E32F942B6881AA3 /* Pods-CNNFeed-CNNFeedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

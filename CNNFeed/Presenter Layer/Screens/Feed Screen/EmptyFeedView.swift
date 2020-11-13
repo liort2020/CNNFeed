@@ -9,8 +9,12 @@ import SwiftUI
 
 struct EmptyFeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(noItemsFondMessage)
+            .foregroundColor(.secondary)
     }
+    
+    // MARK: - Constants
+    private let noItemsFondMessage = "There Are No Items Yet"
 }
 
 struct EmptyFeedView_Previews: PreviewProvider {
