@@ -15,12 +15,13 @@ struct WelcomeView: View {
     
     // FeedTabView sheet
     @State var showFeedTabView = false
-    @State var timeRemaining = Date().dateToShow()
     
     // WebView sheet
     @State var showWebView = false
     
-    private let timer = Timer.publish(every: oneMinuteTimeInterval, on: .main, in: .common).autoconnect()
+    // Timer
+    @State var timeRemaining = Date().dateToShow()
+    private var timer = Timer.publish(every: oneMinuteTimeInterval, on: .main, in: .common).autoconnect()
     
     var body: some View {
         NavigationView {
@@ -71,6 +72,9 @@ struct WelcomeView: View {
             .navigationBarTitle(welcomeNavigationBarTitle)
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .onDisappear {
+            timer.upstream.connect().cancel()
+        }
     }
     
     // MARK: Constants

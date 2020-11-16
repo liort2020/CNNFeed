@@ -17,6 +17,7 @@ class FeedUseCase {
     private var dataCancellables = [AnyCancellable]()
     
     // Timer
+    private var timer: Timer?
     private let fetchingDataTimer = 5.0 // 5 seconds
     
     init(diContainer: DIContainer, context: NSManagedObjectContext) {
@@ -49,10 +50,14 @@ class FeedUseCase {
     }
     
     private func startTimer() {
-        Timer.scheduledTimer(withTimeInterval: fetchingDataTimer, repeats: true) { [weak self] timer in
+        timer = Timer.scheduledTimer(withTimeInterval: fetchingDataTimer, repeats: true) { [weak self] timer in
             guard let self = self else { return }
             self.fetchData()
         }
+    }
+    
+    private func stopTimer() {
+        timer?.invalidate()
     }
     
     private func parseAndSaveItemFeeds(using data: Data, channel: FeedChannel) {
@@ -72,6 +77,11 @@ class FeedUseCase {
                               channel: channel,
                               originalLink: cnnFeedItem.originalLink,
                               in: context)
+    }
+    
+    deinit {
+        stopTimer()
+        dataCancellables.removeAll()
     }
 }
 
