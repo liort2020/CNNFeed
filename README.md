@@ -52,4 +52,4 @@ $ gem install cocoapods
 $ pod install
 ```
 
-3. Open the `CNNFeed.xcworkspace` file that was created and run it in Xcoode
+3. Open the `CNNFeed.xcworkspace` file that was created and run it in Xcode
