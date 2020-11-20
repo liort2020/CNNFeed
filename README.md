@@ -4,9 +4,9 @@
 
 # CNN Feed Application
 This application show you news from CNN’s RSS feeds: 
-1. [Travel](http://rss.cnn.com/rss/edition_travel.rss)
-2. [World Sport](http://rss.cnn.com/rss/edition_sport.rss)
-3. [Entertainment](http://rss.cnn.com/rss/edition_entertainment.rss)
+1. [Travel](http://rss.cnn.com/rss/edition_travel)
+2. [World Sport](http://rss.cnn.com/rss/edition_sport)
+3. [Entertainment](http://rss.cnn.com/rss/edition_entertainment)
 
 ## Architecture
 MVVM architecture pattern and Clean architecture with three layers:
