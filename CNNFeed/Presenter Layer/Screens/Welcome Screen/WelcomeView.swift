@@ -34,6 +34,7 @@ struct WelcomeView: View {
                     }
                     .font(.headline)
                     .foregroundColor(.secondary)
+                    .accessibilityIdentifier(timeRemainingTextId)
                 
                 Spacer()
                 
@@ -48,6 +49,7 @@ struct WelcomeView: View {
                     WebView(latestURL: $latestURL, latestTitle: $latestTitle, feedItem: nil)
                         .environmentObject(feedViewModel)
                 }
+                .accessibilityIdentifier(latestTitleButtonId)
                 
                 Spacer()
                 
@@ -61,6 +63,7 @@ struct WelcomeView: View {
                         .environment(\.managedObjectContext, viewContext)
                         .environmentObject(feedViewModel)
                 }
+                .accessibilityIdentifier(openNextPageButtonId)
                 
                 Spacer()
             }
@@ -78,6 +81,11 @@ struct WelcomeView: View {
     private let latestTitleHorizontalPadding: CGFloat = 10
     // Timer
     private static let oneMinuteTimeInterval: TimeInterval = 60 // 1 minute
+    
+    // MARK: View Accessibility IDs
+    private let timeRemainingTextId = "timeRemainingId"
+    private let openNextPageButtonId = "openNextPageButtonId"
+    private let latestTitleButtonId = "latestTitleButtonId"
 }
 
 struct WelcomeView_Previews: PreviewProvider {
