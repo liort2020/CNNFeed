@@ -28,11 +28,6 @@ struct WelcomeView: View {
             VStack {
                 Spacer()
                 
-                Text(fullName)
-                    .font(.largeTitle)
-                
-                Spacer()
-                
                 Text(timeRemaining)
                     .onReceive(timer) { _ in
                         timeRemaining = Date().dateToShow()
@@ -79,7 +74,6 @@ struct WelcomeView: View {
     
     // MARK: Constants
     private let welcomeNavigationBarTitle = "Welcome"
-    private let fullName = "Lior Tal"
     private let openNextPageTitle = "Open Next Page"
     private let latestTitleHorizontalPadding: CGFloat = 10
     // Timer

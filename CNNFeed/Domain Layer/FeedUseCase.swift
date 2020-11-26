@@ -10,25 +10,25 @@ import Combine
 import CoreData
 
 class FeedUseCase {
-    private var diContainer: DIContainer
+    private var diContainer: DIContainerProtocol
     private let context: NSManagedObjectContext
     
     // Publishers
-    private var dataCancellables = [AnyCancellable]()
+    private(set) var dataCancellables = [AnyCancellable]()
     
     // Timer
-    private var timer: Timer?
-    private let fetchingDataTimer = 5.0 // 5 seconds
+    private(set) var timer: Timer?
+    private(set) var fetchingDataTimer = 5.0 // 5 seconds
     
-    init(diContainer: DIContainer, context: NSManagedObjectContext) {
+    init(diContainer: DIContainerProtocol, context: NSManagedObjectContext) {
         self.diContainer = diContainer
         self.context = context
         
         startTimer()
     }
     
-    func fetchData() {
-        guard let dataManager = diContainer.dataManager else { return }
+    func fetchData(completionHandler: @escaping () -> Void) {
+        let dataManager = diContainer.dataManager
         
         let dispatchGroup = DispatchGroup()
         Endpoint.allCases.forEach {
@@ -46,17 +46,19 @@ class FeedUseCase {
             
             dataCancellables.append(cancellable)
         }
-        dispatchGroup.notify(queue: .global()) { }
-    }
-    
-    private func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: fetchingDataTimer, repeats: true) { [weak self] timer in
-            guard let self = self else { return }
-            self.fetchData()
+        dispatchGroup.notify(queue: .global()) {
+            completionHandler()
         }
     }
     
-    private func stopTimer() {
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: fetchingDataTimer, repeats: true) { [weak self] timer in
+            guard let self = self else { return }
+            self.fetchData { }
+        }
+    }
+    
+    func stopTimer() {
         timer?.invalidate()
     }
     

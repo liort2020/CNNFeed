@@ -8,10 +8,16 @@
 import Foundation
 
 class FeedViewModel: ObservableObject {
-    private let diContainer: DIContainer
+    private var diContainer: DIContainerProtocol
     
-    init(diContainer: DIContainer) {
+    init(diContainer: DIContainerProtocol) {
         self.diContainer = diContainer
-        diContainer.feedUseCase.fetchData()
+        fetchData { }
+    }
+    
+    func fetchData(completionHandler: @escaping () -> Void) {
+        diContainer.feedUseCase.fetchData {
+            completionHandler()
+        }
     }
 }

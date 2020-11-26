@@ -8,13 +8,13 @@
 import Foundation
 import CoreData
 
-enum FeedChannel: String {
+public enum FeedChannel: String, CaseIterable {
     case travel
     case entertainment
     case sport
 }
 
-extension FeedItem {
+public extension FeedItem {
     // MARK: - Save
     static func saveFeedItem(title: String?, subtitle: String?, publishedDate: String?, channel: FeedChannel, originalLink: String?, in context: NSManagedObjectContext) {
         context.performAndWait() {

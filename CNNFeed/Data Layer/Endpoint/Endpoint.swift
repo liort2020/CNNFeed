@@ -18,14 +18,18 @@ enum Endpoint: CaseIterable {
 
 extension Endpoint {
     var url: URL? {
+        var stringURL = ""
         switch self {
         case .travel:
-            return URL(string: Self.baseAPI + "travel.rss") ?? nil
+            stringURL = Self.baseAPI + "travel.rss"
         case .entertainment:
-            return URL(string: Self.baseAPI + "entertainment.rss") ?? nil
+            stringURL = Self.baseAPI + "entertainment.rss"
         case .sport:
-            return URL(string: Self.baseAPI + "sport.rss") ?? nil
+            stringURL = Self.baseAPI + "sport.rss"
         }
+        
+        guard !stringURL.isEmpty, let url = URL(string: stringURL) else { return nil }
+        return url
     }
     
     var channel: FeedChannel {

@@ -8,6 +8,6 @@
 import Foundation
 import Combine
 
-protocol DataRepository {
+public protocol DataRepository {
     func fetchData(from url: URL, session: URLSession) -> AnyPublisher<Data?, Never>
 }
