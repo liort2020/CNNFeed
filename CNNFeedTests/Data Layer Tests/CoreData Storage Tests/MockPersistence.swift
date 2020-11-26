@@ -11,4 +11,6 @@ import Foundation
 struct MockPersistenceController {
     static let shared = PersistenceController(inMemory: true)
     let container = shared.container
+    
+    private init() { }
 }
