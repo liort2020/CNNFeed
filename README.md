@@ -26,7 +26,7 @@ MVVM architecture pattern and Clean architecture with three layers:
   - `DIContainer` – help us to inject the dependencies (Factory and Dependency injection design patterns)
 
 
-![Screenshot](CNNFeedArchitectureImage.png)
+![Screenshot](CNNFeedArchitecture.png)
 
 
 ## Dependencies - Pods
