@@ -19,12 +19,15 @@ MVVM architecture pattern and Clean architecture with three layers:
 
 - **Data Layer**
   - contains CoreData storage with FeedItem model
-  - `DataManager` - manage our requests to CNN server. `DefaultDataRepository` that implements `DataRepository` protocol (Strategy design pattern – We can add in the future `DataRepositoryTest` that implements `DataRepository` protocol)
+  - `DefaultDataRepository` - manage our requests to CNN server and implements `DataRepository` protocol (Strategy design pattern)
+  - `MockDataManager` (For Tests) - create mock data for testing and implements `DataRepository` protocol (Strategy design pattern)
   - `Endpoint` - URLs path to connect to CNN server
+  - `PersistenceController` - allow access to local storage
+  - `MockPersistenceController` (For Tests) - allow access to in-memory storage for testing
 
 ### **Application**
-  - `DIContainer` – help us to inject the dependencies (Factory and Dependency injection design patterns)
-
+  - `DIContainer` – help us to inject the dependencies (Factory and Dependency injection design patterns) and implements `DIContainerProtocol`
+  - `MockDIContainer` (For Tests) – help us to inject the mock dependencies (Factory and Dependency injection design patterns) and implements `DIContainerProtocol`
 
 ![Screenshot](CNNFeedArchitecture.png)
 
@@ -53,3 +56,25 @@ $ pod install
 ```
 
 3. Open the `CNNFeed.xcworkspace` file that was created and run it in Xcode
+
+
+## Tests
+
+### Unit Tests
+Run unit tests:
+1. Navigate to `CNNFeedTests` target
+
+2. Run test from `Product` ➞ `Test` or use `⌘U` shortcuts
+
+### UI Tests
+Run UI tests:
+1. Navigate to `CNNFeedUITests` target
+
+2. Run test from `Product` ➞ `Test` or use `⌘U` shortcuts
+
+### Screen recording 
+![Screenshot](screenRecording.gif)
+
+### Screenshots
+<img src="screenshot1.PNG" width="220"> <img src="screenshot2.PNG" width="220">
+<img src="screenshot3.PNG" width="220"> <img src="screenshot4.PNG" width="220">
