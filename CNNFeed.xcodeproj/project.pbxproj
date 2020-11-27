@@ -12,7 +12,7 @@
 		4341DAA14627E1E6FF64CEA9 /* Pods_CNNFeedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8B34495DE40CB5CAADA4F9 /* Pods_CNNFeedTests.framework */; };
 		495F5A0F25702A6900A95A32 /* ItemFeedViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F5A0E25702A6900A95A32 /* ItemFeedViewUITests.swift */; };
 		495F5A1525702E3B00A95A32 /* WebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F5A1425702E3B00A95A32 /* WebViewUITests.swift */; };
-		495F5A20257032FD00A95A32 /* SportAndEntertainmentFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedView.swift */; };
+		495F5A20257032FD00A95A32 /* SportAndEntertainmentFeedViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedViewUITest.swift */; };
 		495F5A2825703DD700A95A32 /* SharedNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495F5A2725703DD700A95A32 /* SharedNames.swift */; };
 		49A54D62255EC011000F450F /* CNNChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A54D61255EC011000F450F /* CNNChannelModel.swift */; };
 		49A54D6D255EC0F7000F450F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A54D6C255EC0F7000F450F /* Endpoint.swift */; };
@@ -82,7 +82,7 @@
 		3365E07B6E32F942B6881AA3 /* Pods-CNNFeed-CNNFeedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNNFeed-CNNFeedUITests.release.xcconfig"; path = "Target Support Files/Pods-CNNFeed-CNNFeedUITests/Pods-CNNFeed-CNNFeedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		495F5A0E25702A6900A95A32 /* ItemFeedViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemFeedViewUITests.swift; sourceTree = "<group>"; };
 		495F5A1425702E3B00A95A32 /* WebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUITests.swift; sourceTree = "<group>"; };
-		495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SportAndEntertainmentFeedView.swift; path = ../../../../../../../SportAndEntertainmentFeedView.swift; sourceTree = "<group>"; };
+		495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SportAndEntertainmentFeedViewUITest.swift; path = ../../../../../../../SportAndEntertainmentFeedViewUITest.swift; sourceTree = "<group>"; };
 		495F5A2725703DD700A95A32 /* SharedNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedNames.swift; sourceTree = "<group>"; };
 		49A54D61255EC011000F450F /* CNNChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNNChannelModel.swift; sourceTree = "<group>"; };
 		49A54D6C255EC0F7000F450F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -495,7 +495,7 @@
 			children = (
 				49CD2C3B25700CD5005D1CDA /* FeedTabViewUITests.swift */,
 				49CD2C55257025BE005D1CDA /* TravelFeedViewUITests.swift */,
-				495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedView.swift */,
+				495F5A1F257032FD00A95A32 /* SportAndEntertainmentFeedViewUITest.swift */,
 				495F5A0E25702A6900A95A32 /* ItemFeedViewUITests.swift */,
 			);
 			path = "Feed Screen UITests";
@@ -855,7 +855,7 @@
 				49CD2C0F256FFD42005D1CDA /* WelcomViewUITests.swift in Sources */,
 				495F5A1525702E3B00A95A32 /* WebViewUITests.swift in Sources */,
 				49CD2C3C25700CD5005D1CDA /* FeedTabViewUITests.swift in Sources */,
-				495F5A20257032FD00A95A32 /* SportAndEntertainmentFeedView.swift in Sources */,
+				495F5A20257032FD00A95A32 /* SportAndEntertainmentFeedViewUITest.swift in Sources */,
 				49CD2C1E25700AFB005D1CDA /* LaunchPerformanceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
