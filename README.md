@@ -10,6 +10,8 @@ This application show you news from CNN’s RSS feeds:
 
 ## Architecture
 MVVM architecture pattern and Clean architecture with three layers:
+![Screenshot](CNNFeedArchitecture.png)
+
 - **Presenter layer**
   - contains `Views` and `FeedViewModel` (MVVM architecture pattern)
   
@@ -28,8 +30,6 @@ MVVM architecture pattern and Clean architecture with three layers:
 ### **Application**
   - `DIContainer` – help us to inject the dependencies (Factory and Dependency injection design patterns) and implements `DIContainerProtocol`
   - `MockDIContainer` (For Tests) – help us to inject the mock dependencies (Factory and Dependency injection design patterns) and implements `DIContainerProtocol`
-
-![Screenshot](CNNFeedArchitecture.png)
 
 
 ## Dependencies - Pods
